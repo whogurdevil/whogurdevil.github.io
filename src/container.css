@@ -1,0 +1,30 @@
+.container {
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden; /* Hide the overflow content */
+  
+    /* Center the text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .container::before,
+  .container::after {
+    content: ''; /* Create pseudo-elements */
+    position: absolute;
+    top: 0;
+    width: 25vw; /* 1/4th part width */
+    height: 100%; /* Full height */
+    background-color: white; /* Adjust background color to match your layout */
+  }
+  
+  .container::before {
+    left: -25vw; /* Move 1/4th part to the left */
+  }
+  
+  .container::after {
+    right: 25vw; /* Move 1/4th part to the right */
+  }
+  

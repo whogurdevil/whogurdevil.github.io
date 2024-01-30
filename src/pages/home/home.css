@@ -1,0 +1,54 @@
+@keyframes sway {
+  0% { transform: rotate(-1deg); }
+  50% { transform: rotate(1deg); }
+  100% { transform: rotate(-1deg); }
+}
+
+@keyframes swayReverse {
+  0% { transform: rotate(0.5deg); }
+  50% { transform: rotate(-0.5deg); }
+  100% { transform: rotate(0.5deg); }
+}
+
+.body1 {
+  position: relative;
+  height: 100vh; /* Adjust as needed */
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* content: center; */
+}
+
+.imageContainer {
+  position: relative;
+  height: 100%; /* Ensure container stretches to fit content */
+  width: 150vw;
+  overflow: visible;
+}
+
+.img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#leftLeaves {
+  width: 50vw;
+  animation: swayReverse 5s ease-in-out infinite alternate; /* Adjust timing and animation as needed */
+}
+
+#rightLeaves {
+  top : -1;
+  animation: sway 8s ease-in-out infinite alternate; /* Adjust timing and animation as needed */
+}
+
+#profile {
+  width: 60vw;
+  left: 20vw;
+  top: 3vh;
+}
+
+.my-atropos {
+  width: 150vw;
+  height: 100vh;
+}
