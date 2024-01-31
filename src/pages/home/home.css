@@ -20,35 +20,38 @@
 
 .imageContainer {
   position: relative;
-  height: 100%; /* Ensure container stretches to fit content */
-  width: 150vw;
-  overflow: visible;
+  height: 100%;
+  width: 120vw;
 }
 
 .img1 {
   position: absolute;
-  top: 0;
+  top: -10;
   left: 0;
   width: 100%;
+
 }
 
 #leftLeaves {
   width: 50vw;
-  animation: swayReverse 5s ease-in-out infinite alternate; /* Adjust timing and animation as needed */
+  left: 10vw;
+  animation: swayReverse 4s ease-in-out infinite alternate;
 }
 
 #rightLeaves {
-  top : -1;
-  animation: sway 8s ease-in-out infinite alternate; /* Adjust timing and animation as needed */
+  top : 0;
+  left: 10vw;
+  animation: sway 5s ease-in-out infinite alternate; /* Adjust timing and animation as needed */
+  width: 100vw;
 }
 
 #profile {
   width: 60vw;
-  left: 20vw;
+  left: 30vw;
   top: 3vh;
 }
 
 .my-atropos {
-  width: 150vw;
-  height: 100vh;
+  width: 120vw;
+  height: 120vh;
 }
