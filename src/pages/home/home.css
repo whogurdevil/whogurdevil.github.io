@@ -47,11 +47,24 @@
 
 #profile {
   width: 60vw;
-  left: 30vw;
+  left: 15vw;
   top: 3vh;
 }
 
 .my-atropos {
   width: 120vw;
   height: 120vh;
+}
+
+.intro-text{
+  position: absolute;
+  z-index: 15;
+  top:20vh;
+  right: 20vw;
+  width: 30vw;
+  text-align: right;
+}
+
+.text-span{
+  color: #CD7F32;
 }

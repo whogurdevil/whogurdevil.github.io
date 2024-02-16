@@ -70,10 +70,11 @@ function NavList() {
                 <span className="link link-underline link-underline-black text-brown-800"> Home </span>
             </a>
             <a href="#" className="font-display max-w-sm text-2xl font-bold leading-tight">
-                <span className="link link-underline link-underline-black text-brown-800"> Projects </span>
-            </a>            <a href="#" className="font-display max-w-sm text-2xl font-bold leading-tight">
                 <span className="link link-underline link-underline-black text-brown-800"> About </span>
-            </a>            <a href="#" className="font-display max-w-sm text-2xl font-bold leading-tight">
+            </a>
+            <a href="#" className="font-display max-w-sm text-2xl font-bold leading-tight">
+                <span className="link link-underline link-underline-black text-brown-800"> Projects </span>
+            </a>     <a href="#" className="font-display max-w-sm text-2xl font-bold leading-tight">
                 <span className="link link-underline link-underline-black text-brown-800"> Contact </span>
             </a>
         </div>

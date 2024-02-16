@@ -11,6 +11,7 @@ import rightLeaves from '../../assets/left-leaves.png';
 import './home.css';
 import About from '../about/About';
 import { Atropos } from 'atropos/react';
+import { Typography } from '@material-tailwind/react';
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -41,14 +42,14 @@ export default function Home() {
     const leftLeaves = document.getElementById('leftLeaves');
     const rightLeaves = document.getElementById('rightLeaves');
 
-    
-      mountains!.style.top = `${scrollTop * 0.5}px`;
-      backTrees!.style.top = `${scrollTop * 0.3}px`;
-      midTrees!.style.top = `${scrollTop * 0.2}px`;
-      profile!.style.top = `${scrollTop * 0.1}px`;
-      frontTrees!.style.top = `${scrollTop * 0.1}px`;
-      
-    
+
+    mountains!.style.top = `${scrollTop * 0.5}px`;
+    backTrees!.style.top = `${scrollTop * 0.3}px`;
+    midTrees!.style.top = `${scrollTop * 0.2}px`;
+    profile!.style.top = `${scrollTop * 0.1}px`;
+    frontTrees!.style.top = `${scrollTop * 0.1}px`;
+
+
   };
 
 
@@ -67,14 +68,22 @@ export default function Home() {
           onLeave={() => console.log('Leave')}
           onRotate={(x, y) => console.log('Rotate', x, y)}
         >
-          <img className='img1' data-atropos-offset="-2" id='mountains' src={mountains} alt="" />
-          <img className='img1' data-atropos-offset="-1.5" id='backTrees' src={backTrees} alt="" />
-          <img className='img1' data-atropos-offset="-1" id='midTrees' src={midTrees} alt="" />
-          <img className='img1' data-atropos-offset="-0.5" id='profile' src={profile} alt="" />
-          <img className='img1' data-atropos-offset="1" id='frontTrees' src={frontTrees} alt="" />
-          <img className='img1' data-atropos-offset="1.5" id='leftLeaves' src={leftLeaves} alt="" />
-          <img className='img1' data-atropos-offset="2" id='rightLeaves' src={rightLeaves} alt="" />
+          <img className='img1' data-atropos-offset="-3" id='mountains' src={mountains} alt="" />
+          <img className='img1' data-atropos-offset="-2" id='backTrees' src={backTrees} alt="" />
+          <img className='img1' data-atropos-offset="-1.5" id='midTrees' src={midTrees} alt="" />
+          <img className='img1' data-atropos-offset="-1" id='profile' src={profile} alt="" />
+          <img className='img1' data-atropos-offset="1.5" id='frontTrees' src={frontTrees} alt="" />
+          <img className='img1' data-atropos-offset="2" id='leftLeaves' src={leftLeaves} alt="" />
+          <img className='img1' data-atropos-offset="3" id='rightLeaves' src={rightLeaves} alt="" />
         </Atropos>
+        {/* <Typography placeholder={undefined} className='intro-text'variant='h2'>
+        "Hey there! I'm Gurdev Singh, a passionate software developer based in Ludhiana. I thrive on crafting elegant solutions and turning intricate code into innovative experiences that resonate in the digital realm."
+        </Typography> */}
+        <Typography placeholder={undefined} className='intro-text' variant='h1' color="brown">
+          Welcome to <span className='text-span'>Gurdev Singh</span>'s Portfolio
+        </Typography>
+
+        
       </div>
       <About />
     </div>
