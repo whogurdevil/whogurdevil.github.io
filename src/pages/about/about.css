@@ -1,0 +1,37 @@
+#about-text{
+    position: absolute;
+    top:20vh
+    max
+}
+#about-scroll-leaf {
+    position: absolute;
+    top: 70vh;
+    right: 20vw;
+    height: 50vh;
+    animation: fastSway 3s ease-in-out infinite alternate;
+  
+}
+
+#bunny {
+    position: absolute;
+    top: 60vh;
+    right:4vw;
+    height: 50vh;
+    mix-blend-mode: multiply;
+}
+
+#mushroom {
+    position: absolute;
+    top: 80vh;
+    left:6vw;
+    height: 30vh;
+    /* mix-blend-mode: multiply; */
+}
+
+#down-arrow {
+    position: absolute;
+    top: 70vh;
+    right:33vw;
+    height: 40vh;
+    /* mix-blend-mode: multiply; */
+}

@@ -1,6 +1,6 @@
 //TODO: make  leabes also go away with the scroll thing
 
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import mountains from '../../assets/mountains.png';
 import backTrees from '../../assets/back-tree.png';
 import midTrees from '../../assets/mid-tree.png';
@@ -38,8 +38,8 @@ export default function Home() {
     const midTrees = document.getElementById('midTrees');
     const profile = document.getElementById('profile');
     const frontTrees = document.getElementById('frontTrees');
-    const leftLeaves = document.getElementById('leftLeaves');
-    const rightLeaves = document.getElementById('rightLeaves');
+    // const leftLeaves = document.getElementById('leftLeaves');
+    // const rightLeaves = document.getElementById('rightLeaves');
 
 
     mountains!.style.top = `${scrollTop * 0.5}px`;
@@ -77,8 +77,8 @@ export default function Home() {
         {/* <Typography placeholder={undefined} className='intro-text'variant='h2'>
         "Hey there! I'm Gurdev Singh, a passionate software developer based in Ludhiana. I thrive on crafting elegant solutions and turning intricate code into innovative experiences that resonate in the digital realm."
         </Typography> */}
-        <Typography placeholder={undefined} className='intro-text' variant='h1' color="brown">
-          Welcome to <span className='text-span'>Gurdev Singh</span>'s Portfolio
+        <Typography placeholder={undefined} className='intro-text' variant='h1' style={{color:'#4E342E'}}>
+          Welcome to <br/><span className='text-span'>Gurdev Singh</span>'s Portfolio
         </Typography>
 
         <img id='scroll-leaf' src={scrolLeaf} />

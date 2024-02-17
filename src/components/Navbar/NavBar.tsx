@@ -2,7 +2,6 @@ import React from "react";
 import {
     Navbar,
     Collapse,
-    Typography,
     IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -98,7 +97,7 @@ export function NavbarSimple() {
     return (
         <Navbar
             placeholder='null'
-            className="sticky top-0 w-[calc(100%+4vh)] absolute drop-shadow-none shadow-none bg-transparent border-none rounded-none z-10 backdrop-blur-none backdrop-saturate-100">
+            className="top-0 right-20 w-min absolute drop-shadow-none shadow-none bg-transparent border-none rounded-none z-10 backdrop-blur-none backdrop-saturate-100">
 
             <div className="flex items-end justify-end text-blue-gray-900">
                 {/* <Typography
