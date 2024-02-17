@@ -7,6 +7,7 @@ import midTrees from '../../assets/mid-tree.png';
 import frontTrees from '../../assets/tree-front.png';
 import profile from '../../assets/profile.png';
 import leftLeaves from '../../assets/right-leaves.png';
+import scrolLeaf from '../../assets/scroll-leaf.png'
 import rightLeaves from '../../assets/left-leaves.png';
 import './home.css';
 import About from '../about/About';
@@ -28,11 +29,9 @@ export default function Home() {
     }
   }, []);
 
-  const [scrollTop, setScrollTop] = useState(0);
 
   const handleScroll = (event: any) => {
     const { scrollTop } = event.currentTarget;
-    setScrollTop(scrollTop);
 
     const mountains = document.getElementById('mountains');
     const backTrees = document.getElementById('backTrees');
@@ -48,7 +47,6 @@ export default function Home() {
     midTrees!.style.top = `${scrollTop * 0.2}px`;
     profile!.style.top = `${scrollTop * 0.1}px`;
     frontTrees!.style.top = `${scrollTop * 0.1}px`;
-
 
   };
 
@@ -83,7 +81,13 @@ export default function Home() {
           Welcome to <span className='text-span'>Gurdev Singh</span>'s Portfolio
         </Typography>
 
-        
+        <img id='scroll-leaf' src={scrolLeaf} />
+{/* 
+        <Typography id='scroll-leaf-text' variant='h3' placeholder={''} style={{ color: '#4E342E'}}>
+
+          Scroll down<br /> to discover<br /> more
+        </Typography> */}
+
       </div>
       <About />
     </div>

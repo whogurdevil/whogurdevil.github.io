@@ -1,18 +1,63 @@
 @keyframes sway {
-  0% { transform: rotate(-1deg); }
-  50% { transform: rotate(1deg); }
-  100% { transform: rotate(-1deg); }
+  0% {
+    transform: rotate(-1deg);
+  }
+
+  50% {
+    transform: rotate(1deg);
+  }
+
+  100% {
+    transform: rotate(-1deg);
+  }
 }
 
 @keyframes swayReverse {
-  0% { transform: rotate(0.5deg); }
-  50% { transform: rotate(-0.5deg); }
-  100% { transform: rotate(0.5deg); }
+  0% {
+    transform: rotate(0.5deg);
+  }
+
+  50% {
+    transform: rotate(-0.5deg);
+  }
+
+  100% {
+    transform: rotate(0.5deg);
+  }
+}
+
+@keyframes fastSway {
+  0% {
+    transform: rotate(-3deg);
+  }
+
+  50% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+@keyframes fastSway2 {
+  0% {
+    transform: rotate(-60deg);
+  }
+
+  50% {
+    transform: rotate(-50deg);
+  }
+
+  100% {
+    transform: rotate(-60deg);
+  }
 }
 
 .body1 {
   position: relative;
-  height: 100vh; /* Adjust as needed */
+  height: 100vh;
+  /* Adjust as needed */
   overflow-y: scroll;
   overflow-x: hidden;
   /* content: center; */
@@ -39,9 +84,10 @@
 }
 
 #rightLeaves {
-  top : 0;
+  top: 0;
   left: 10vw;
-  animation: sway 5s ease-in-out infinite alternate; /* Adjust timing and animation as needed */
+  animation: sway 5s ease-in-out infinite alternate;
+  /* Adjust timing and animation as needed */
   width: 100vw;
 }
 
@@ -56,15 +102,25 @@
   height: 120vh;
 }
 
-.intro-text{
+.intro-text {
   position: absolute;
   z-index: 15;
-  top:20vh;
-  right: 20vw;
+  top: 20vh;
+  right: 24vw;
   width: 30vw;
   text-align: right;
 }
 
-.text-span{
+.text-span {
   color: #CD7F32;
 }
+
+#scroll-leaf {
+  position: absolute;
+  top: 50vh;
+  right: 20vw;
+  height: 50vh;
+  animation: fastSway 3s ease-in-out infinite alternate;
+
+}
+
