@@ -30,8 +30,8 @@
 
 #down-arrow {
     position: absolute;
-    top: 70vh;
-    right:33vw;
-    height: 40vh;
+    top: 85vh;
+    right: 50vw;
+    height: 30vh;
     /* mix-blend-mode: multiply; */
 }

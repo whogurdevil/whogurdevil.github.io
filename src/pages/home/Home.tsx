@@ -13,6 +13,7 @@ import './home.css';
 import About from '../about/About';
 import { Atropos } from 'atropos/react';
 import { Typography } from '@material-tailwind/react';
+import Projects from '../../components/skills/Skills';
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -90,6 +91,7 @@ export default function Home() {
 
       </div>
       <About />
+      <Projects/>
     </div>
   );
 }

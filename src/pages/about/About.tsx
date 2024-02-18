@@ -8,7 +8,7 @@ import mushroom from '../../assets/mushroom.png'
 
 export default function About() {
   return (
-    <section className='relative h-[calc(110vh)] w-[calc(120vw)] bg-brown-50 pt-80 m-auto px-[calc(20vw)]'>
+    <section id='about' className='relative h-[calc(104vh)] w-[calc(120vw)] bg-brown-50 pt-80 m-auto px-[calc(20vw)]'>
       <Typography placeholder={undefined} variant='h2' style={{color:'#43211F'}} className='absolute max-w-[calc(40vw)] top-32'>
         I am a passionate
         <Typography placeholder={undefined} style={{color:'#CD7F32'}} variant='h2'>

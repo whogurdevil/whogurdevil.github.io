@@ -10,71 +10,16 @@ import './NavBar.css'
 function NavList() {
     return (
         <div className="flex flex-col ml-0 gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-            {/* <Typography
-                placeholder='null'
-                as="li"
-                variant="small"
-                color="blue-gray"
-                className="p-1 font-extrabold"
-            >
-                <a href="#" className="font-display max-w-sm text-2xl font-bold leading-tight">
-                    <span className="link link-underline link-underline-black text-black" >
-                    Home
-                    </span>
-                </a>
-            </Typography>
-            <Typography
-                placeholder='null'
-
-                as="li"
-                variant="small"
-                color="blue-gray"
-                className="p-1 font-extrabold"
-            >
-                <a href="#" className="font-display max-w-sm text-2xl font-bold leading-tight">
-                    <span className="link link-underline link-underline-black text-black" >
-                    Projects
-                    </span>
-                </a>
-            </Typography>
-            <Typography
-                placeholder='null'
-
-                as="li"
-                variant="small"
-                color="blue-gray"
-                className="p-1 font-extrabold"
-            >
-                <a href="#" className="font-display max-w-sm text-2xl font-bold leading-tight">
-                    <span className="link link-underline link-underline-black text-black" >
-                    About
-                    </span>
-                </a>
-            </Typography>
-            <Typography
-                placeholder='null'
-
-                as="li"
-                variant="small"
-                color="blue-gray"
-                className="p-1 font-extrabold"
-            >
-                <a href="#" className="font-display max-w-sm text-2xl font-bold leading-tight">
-                    <span className="link link-underline link-underline-black text-black" >
-                    Contact
-                    </span>
-                </a>
-            </Typography> */}
-            <a href="#" className="font-display max-w-sm text-2xl font-bold leading-tight">
-                <span className="link link-underline link-underline-black text-brown-800"> Home </span>
+            <a href="main" className="font-display max-w-sm text-2xl font-bold leading-tight">
+                <span className="link link-underline link-underline-black"> Home </span>
             </a>
-            <a href="#" className="font-display max-w-sm text-2xl font-bold leading-tight">
-                <span className="link link-underline link-underline-black text-brown-800"> About </span>
+            <a href="#about" className="font-display max-w-sm text-2xl font-bold leading-tight">
+                <span className="link link-underline link-underline-black"> About </span>
             </a>
-            <a href="#" className="font-display max-w-sm text-2xl font-bold leading-tight">
-                <span className="link link-underline link-underline-black text-brown-800"> Projects </span>
+            <a href="projects" className="font-display max-w-sm text-2xl font-bold leading-tight">
+                <span className="link link-underline link-underline-black"> Projects </span>
             </a>     <a href="#" className="font-display max-w-sm text-2xl font-bold leading-tight">
-                <span className="link link-underline link-underline-black text-brown-800"> Contact </span>
+                <span className="link link-underline link-underline-black"> Contact </span>
             </a>
         </div>
     );
@@ -97,19 +42,10 @@ export function NavbarSimple() {
     return (
         <Navbar
             placeholder='null'
-            className="top-0 right-20 w-min absolute drop-shadow-none shadow-none bg-transparent border-none rounded-none z-10 backdrop-blur-none backdrop-saturate-100">
+            className="top-0 right-20 w-min absolute drop-shadow-none shadow-none bg-transparent border-none rounded-none z-50 backdrop-blur-none backdrop-saturate-100 ">
 
-            <div className="flex items-end justify-end text-blue-gray-900">
-                {/* <Typography
-                    placeholder='null'
+            <div className="flex items-end justify-end text-primary">
 
-                    as="a"
-                    href="#"
-                    variant="h6"
-                    className="cursor-pointer py-1.5"
-                >
-                    {''}
-                </Typography> */}
                 <div className="hidden lg:block">
                     <NavList />
                 </div>
