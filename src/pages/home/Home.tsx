@@ -13,7 +13,8 @@ import './home.css';
 import About from '../about/About';
 import { Atropos } from 'atropos/react';
 import { Typography } from '@material-tailwind/react';
-import Projects from '../../components/skills/Skills';
+import Skills from '../../components/skills/Skills';
+import Projects from '../projects/Projects';
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -78,20 +79,21 @@ export default function Home() {
         {/* <Typography placeholder={undefined} className='intro-text'variant='h2'>
         "Hey there! I'm Gurdev Singh, a passionate software developer based in Ludhiana. I thrive on crafting elegant solutions and turning intricate code into innovative experiences that resonate in the digital realm."
         </Typography> */}
-        <Typography placeholder={undefined} className='intro-text' variant='h1' style={{color:'#4E342E'}}>
-          Welcome to <br/><span className='text-span'>Gurdev Singh</span>'s Portfolio
+        <Typography placeholder={undefined} className='intro-text text-5xl font-bold' style={{ color: '#4E342E' }}>
+          Welcome to <br /><span className='text-span'>Gurdev Singh</span>'s Portfolio
         </Typography>
 
         <img id='scroll-leaf' src={scrolLeaf} />
-{/* 
+        {/* 
         <Typography id='scroll-leaf-text' variant='h3' placeholder={''} style={{ color: '#4E342E'}}>
 
           Scroll down<br /> to discover<br /> more
         </Typography> */}
 
       </div>
-      <About />
-      <Projects/>
+      <About /> 
+      <Skills/>
+      <Projects />
     </div>
   );
 }

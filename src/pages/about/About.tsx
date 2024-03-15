@@ -8,10 +8,10 @@ import mushroom from '../../assets/mushroom.png'
 
 export default function About() {
   return (
-    <section id='about' className='relative h-[calc(104vh)] w-[calc(120vw)] bg-brown-50 pt-80 m-auto px-[calc(20vw)]'>
-      <Typography placeholder={undefined} variant='h2' style={{color:'#43211F'}} className='absolute max-w-[calc(40vw)] top-32'>
+    <section id='about' className='relative py-44 w-[calc(120vw)] bg-brown-50 pt-12 m-auto px-[calc(20vw)]'>
+      <Typography placeholder={undefined} variant='h2' style={{color:'#43211F'}} className='max-w-[calc(40vw)]'>
         I am a passionate
-        <Typography placeholder={undefined} style={{color:'#CD7F32'}} variant='h2'>
+        <Typography placeholder={undefined} style={{color:'#CD7F32', }} variant='h2'>
         <TypewriterComponent
           options={{
             strings: ['Frontend Developer', 'Backend Developer', 'Android App Developer'],

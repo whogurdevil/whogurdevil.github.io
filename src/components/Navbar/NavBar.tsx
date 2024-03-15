@@ -10,15 +10,15 @@ import './NavBar.css'
 function NavList() {
     return (
         <div className="flex flex-col ml-0 gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-            <a href="main" className="font-display max-w-sm text-2xl font-bold leading-tight">
+            <a href="main" className="text-primary font-display max-w-sm text-2xl font-bold leading-tight">
                 <span className="link link-underline link-underline-black"> Home </span>
             </a>
-            <a href="#about" className="font-display max-w-sm text-2xl font-bold leading-tight">
+            <a href="#about" className="text-primary font-display max-w-sm text-2xl font-bold leading-tight">
                 <span className="link link-underline link-underline-black"> About </span>
             </a>
-            <a href="projects" className="font-display max-w-sm text-2xl font-bold leading-tight">
+            <a href="#projects" className="text-primary font-display max-w-sm text-2xl font-bold leading-tight">
                 <span className="link link-underline link-underline-black"> Projects </span>
-            </a>     <a href="#" className="font-display max-w-sm text-2xl font-bold leading-tight">
+            </a>     <a href="#" className="text-primary font-display max-w-sm text-2xl font-bold leading-tight">
                 <span className="link link-underline link-underline-black"> Contact </span>
             </a>
         </div>

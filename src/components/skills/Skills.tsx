@@ -4,9 +4,9 @@ import skillsGraphics from '../../assets/skills-graphics.png'
 
 export default function Skills() {
   return (
-    <section id='projects' className="h-[calc(120vh)] z-30 absolute bg-brown-900 w-[calc(120vw)] px-52 py-48">
-      <img src={skillsGraphics} className="absolute h-[calc(100vh)] top-11" />
-      <div className="absolute top-20 right-60 flex-col max-w-[calc(30vw)]">
+    <section id='skills' className="z-30 relative bg-brown-900 w-[calc(120vw)] px-52 items-center justify-between flex">
+      <img src={skillsGraphics} className="h-[calc(100vh)] top-11" />
+      <div className="flex-col max-w-[calc(30vw)] my-20 align-top justify-end">
         <Typography placeholder={undefined} className="text-pinkish text-right text-5xl font-bold">Skills</Typography>
 
         <Typography placeholder={undefined} className="text-tertiary text-right mt-10 text-2xl  font-bold">Languages</Typography>
