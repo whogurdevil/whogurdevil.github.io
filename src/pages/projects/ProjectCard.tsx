@@ -1,5 +1,3 @@
-import { Typography } from '@material-tailwind/react';
-import Atropos from 'atropos/react';
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 
 type CardData = {

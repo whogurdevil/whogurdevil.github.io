@@ -2,6 +2,7 @@
 import Home from './pages/home/Home'
 import NavbarSimple from './components/Navbar/NavBar'
 import { useState, useEffect } from 'react';
+import RotateWarning from './pages/rotateWarning/RotateWarning';
 
 export default function App() {
 
@@ -22,7 +23,7 @@ export default function App() {
 
   return (
     <>
-    {orientation.type === 'landscape-primary' ? (<div><NavbarSimple/> <Home/></div>) : (<div>yes</div>)}
+    {orientation.type === 'landscape-primary' ? (<div><NavbarSimple/> <Home/></div>) : (<RotateWarning/>)}
     </>
       )
 }
